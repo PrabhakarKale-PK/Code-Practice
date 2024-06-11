@@ -1,5 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
+from functools import wraps
+import jwt
 
 app = Flask(__name__)
 api = Api(app)
